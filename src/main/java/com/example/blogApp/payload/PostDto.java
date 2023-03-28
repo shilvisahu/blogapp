@@ -1,6 +1,5 @@
-package com.example.blogApp.dto;
+package com.example.blogApp.payload;
 
-import com.example.blogApp.entity.Post;
 import lombok.Data;
 
 @Data

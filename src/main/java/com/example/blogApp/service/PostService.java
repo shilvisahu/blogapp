@@ -1,13 +1,12 @@
 package com.example.blogApp.service;
 
-import com.example.blogApp.dto.PostDto;
-
-import java.util.List;
+import com.example.blogApp.payload.PostDto;
+import com.example.blogApp.payload.PostResponse;
 
 public interface PostService {
     PostDto createPost(PostDto postDto);
 
-    List<PostDto> getAllPosts();
+    PostResponse<PostDto> getAllPosts(int pageNo, int pageSize, String sortBy, String sortDir);
 
     PostDto getPostById(long id);
 
